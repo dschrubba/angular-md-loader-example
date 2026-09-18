@@ -2,6 +2,8 @@
 This project uses [marked](https://github.com/markedjs/marked), a low-level compiler for parsing Markdown without caching or blocking for long periods of time.
 We use it to compile Markdown to HTML code. It is very easy to style. You also can implement [custom extensions](https://marked.js.org/using_advanced#extensions).
 
+Demo: https://dschrubba.github.io/angular-md-loader-example/
+
 ## Source Code
 Marked renders quotes as `<pre>` elements.
 ```
