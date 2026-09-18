@@ -1,0 +1,9 @@
+@use 'main' as m;
+
+.header-container {
+  padding: m.$default-padding-step * 2;
+  color: m.$on-panel-bg;
+  background: m.$panel-bg;
+  border-bottom: 1px dotted m.$default-border-color;
+  box-sizing: border-box;
+}

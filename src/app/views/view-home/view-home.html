@@ -1,0 +1,8 @@
+<div class="w-100 position-relative d-flex flex-row">
+  <div class="w-100 d-flex flex-column">
+    @for (story of stories; track $index;) {
+      <app-markdown-element [md]="story"></app-markdown-element>
+    }
+  </div>
+  <app-sidebar class="flex-shrink-0"></app-sidebar>
+</div>

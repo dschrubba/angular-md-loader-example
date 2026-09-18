@@ -1,0 +1,35 @@
+$content-max-width: 1200px;
+$sidebar-width: 240px;
+
+$scaffold-bg: #f3f0ed;
+
+$panel-bg: #f1ebea;
+$panel-bg-hover: #d9d3d2;
+$on-panel-bg: #121212;
+$on-panel-bg-light: #59585b;
+
+$panel-bg-dark: #121212;
+$on-panel-bg-dark: #f1ebea;
+
+$blockquote-accent: slategrey;
+$blockquote-bg: #e2e5e4;
+$on-blockquote-bg: #121212;
+
+$accent: #ea4608;
+
+$default-border-color: #232425;
+
+$default-padding-step: 8px;
+$default-font: 'Merriweather', serif;
+$default-font-mono: 'Noto Sans Mono', monospace;
+
+$golden-ratio: 1.61803;
+
+.content-width {
+  width: 100%;
+  max-width: $content-max-width;
+}
+
+.panel {
+  background: $panel-bg;
+}

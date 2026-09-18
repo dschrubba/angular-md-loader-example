@@ -1,0 +1,9 @@
+@use 'main' as m;
+
+.footer-container {
+  padding: m.$default-padding-step * 2;
+  color: m.$on-panel-bg-light;
+  background: m.$panel-bg;
+  border-top: 1px dotted m.$default-border-color;
+  box-sizing: border-box;
+}

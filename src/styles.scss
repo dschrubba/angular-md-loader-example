@@ -1,0 +1,57 @@
+@use 'fonts' as f;
+@use 'bootstrap';
+@use 'main' as m;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: m.$default-font;
+  font-size: 16px;
+  min-height: 100dvh;
+  color: m.$on-panel-bg;
+}
+
+body {
+  /* translucent gradient tinting the image underneath */
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 100%),
+    m.$scaffold-bg;
+}
+
+a, a:link, a:visited, a:active {
+  color: m.$accent;
+}
+a:hover {
+  color: m.$on-panel-bg;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+h5 {
+  font-weight: 700;
+}
+
+pre {
+  background: m.$panel-bg-dark;
+  color: m.$on-panel-bg-dark;
+  padding: m.$default-padding-step * 3;
+  box-sizing: border-box;
+  border-left: m.$default-padding-step solid m.$accent;
+  font-family: m.$default-font-mono;
+}
+
+blockquote {
+  padding: m.$default-padding-step * 3 m.$default-padding-step * 3 m.$default-padding-step;
+  box-sizing: border-box;
+  background: m.$blockquote-bg;
+  color: m.$on-blockquote-bg;
+  border-left: m.$default-padding-step solid m.$blockquote-accent ;
+  font-style: italic;
+}

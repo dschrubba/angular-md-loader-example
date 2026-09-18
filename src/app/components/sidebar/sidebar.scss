@@ -1,0 +1,40 @@
+@use 'sass:math';
+@use 'main' as m;
+
+:host {
+  width: m.$sidebar-width;
+}
+
+.sidebar-wrapper {
+  box-sizing: border-box;
+  border-left: 1px dotted m.$default-border-color;
+  //border-bottom: 1px dotted m.$default-border-color;
+  min-height: 100dvh;
+  height: 100%;
+}
+
+.sidebar-section {
+  padding: m.$default-padding-step;
+
+  &.header {
+    font-weight: bold;
+    padding-bottom: 0;
+  }
+
+  &.hover-able {
+  }
+  &.hover-able:hover {
+    user-select: none;
+    cursor: pointer;
+    background: m.$panel-bg-hover;
+  }
+  &.hover-able:active {
+    filter: brightness(1.025);
+    cursor: pointer;
+    background: m.$panel-bg-hover;
+  }
+}
+
+.sidebar-divider {
+  border-bottom: 1px dotted m.$default-border-color;
+}

@@ -1,0 +1,7 @@
+@use 'main' as m;
+
+.md-container {
+  padding: m.$default-padding-step * 3;
+  box-sizing: border-box;
+  //border-bottom: 1px dotted m.$default-border-color;
+}
