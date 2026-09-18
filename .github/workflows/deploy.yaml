@@ -30,7 +30,7 @@ jobs:
         run: npm ci
 
       - name: Build Angular Project
-        run: npm run build -- --base-href=/
+        run: npm run build -- --base-href=/angular-md-loader-example/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
